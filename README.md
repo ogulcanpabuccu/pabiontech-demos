@@ -7,6 +7,7 @@ Sektörel örnek (demo) web siteleri. Her klasör bağımsız bir tek sayfa site
 | Sektör | Klasör | URL |
 |---|---|---|
 | Klinik | `klinik/` | https://klinik.demo.pabiontech.com |
+| Restoran | `restoran/` | https://restoran.demo.pabiontech.com |
 
 ## Yapı
 
