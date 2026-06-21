@@ -8,6 +8,7 @@ Sektörel örnek (demo) web siteleri. Her klasör bağımsız bir tek sayfa site
 |---|---|---|
 | Klinik | `klinik/` | https://klinik.demo.pabiontech.com |
 | Restoran | `restoran/` | https://restoran.demo.pabiontech.com |
+| Spor Salonu | `spor-salonu/` | https://spor-salonu.demo.pabiontech.com |
 
 ## Yapı
 
