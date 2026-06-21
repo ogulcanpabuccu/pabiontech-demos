@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ATÖLYE 17 — Berber & Kuaför</title>
+  <meta name="description" content="ATÖLYE 17 — modern bir mekânda kişiye özel saç ve bakım hizmetleri. Berber, kuaför ve estetik bakım." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Italiana&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ── NAVBAR ────────────────────────────────────── -->
+  <header class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#" class="brand">
+        <span class="brand-mark">A17</span>
+        <span class="brand-text">ATÖLYE <em>17</em></span>
+      </a>
+
+      <nav class="nav-links">
+        <a href="#hizmetler">Hizmetler</a>
+        <a href="#felsefe">Felsefe</a>
+        <a href="#galeri">Galeri</a>
+        <a href="#iletisim">İletişim</a>
+      </nav>
+
+      <a href="#rezervasyon" class="btn btn-primary">
+        Randevu Al
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Menü">
+        <i class="bi bi-list"></i>
+      </button>
+    </div>
+    <div class="nav-mobile" id="navMobile">
+      <a href="#hizmetler">Hizmetler</a>
+      <a href="#felsefe">Felsefe</a>
+      <a href="#galeri">Galeri</a>
+      <a href="#iletisim">İletişim</a>
+      <a href="#rezervasyon" class="btn btn-primary">Randevu Al</a>
+    </div>
+  </header>
+
+  <!-- ── HERO ──────────────────────────────────────── -->
+  <section class="hero">
+    <div class="hero-bg">
+      <img src="https://images.unsplash.com/photo-1622286342621-4bd786c2447c?w=1800&q=80&auto=format&fit=crop" alt="Modern berber salonu" />
+    </div>
+    <div class="hero-overlay"></div>
+
+    <div class="container hero-content">
+      <div class="hero-eyebrow reveal">— Bağdat Caddesi, 2018'den beri</div>
+      <h1 class="reveal">
+        Saç değil, <em>stil</em>.<br/>
+        Tıraş değil, <em>ritüel</em>.
+      </h1>
+      <p class="reveal">
+        ATÖLYE 17, kadın ve erkekler için kişiye özel saç, sakal ve bakım
+        hizmetleri sunan modern bir studio. Sıcak bir karşılama, profesyonel
+        eller ve özenli bir deneyim.
+      </p>
+      <div class="hero-actions reveal">
+        <a href="#rezervasyon" class="btn btn-primary btn-lg">Randevu Al</a>
+        <a href="#hizmetler" class="btn btn-ghost btn-lg">Hizmetlerimiz <i class="bi bi-arrow-right"></i></a>
+      </div>
+    </div>
+
+    <div class="hero-meta">
+      <div class="meta-item">
+        <span class="num">7+</span>
+        <span class="lbl">Yıllık<br/>Tecrübe</span>
+      </div>
+      <div class="meta-divider"></div>
+      <div class="meta-item">
+        <span class="num">12K+</span>
+        <span class="lbl">Mutlu<br/>Müşteri</span>
+      </div>
+      <div class="meta-divider"></div>
+      <div class="meta-item">
+        <span class="num">4.9</span>
+        <span class="lbl">Google<br/>Puanı ★</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── HİZMETLER ─────────────────────────────────── -->
+  <section id="hizmetler" class="section">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Hizmetlerimiz</span>
+        <h2>Saç, sakal, <em>bakım</em>.</h2>
+        <p>Erkek ve kadın için tüm temel hizmetler — özenle, sabırla, kişiye özel.</p>
+      </div>
+
+      <div class="services-grid">
+
+        <article class="service-card reveal">
+          <div class="service-num">01</div>
+          <div class="service-body">
+            <h3>Saç Kesimi</h3>
+            <p>Yüz hatlarına ve saç tipinize göre kişisel kesim önerisi.</p>
+            <div class="service-meta">
+              <span><i class="bi bi-person"></i> Erkek</span>
+              <span><i class="bi bi-person-dress"></i> Kadın</span>
+              <span class="price">₺350'den</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="service-card reveal">
+          <div class="service-num">02</div>
+          <div class="service-body">
+            <h3>Sakal Tıraşı & Şekillendirme</h3>
+            <p>Sıcak havlu ritüeli, kişiye özel sakal şekillendirme ve cilt bakımı.</p>
+            <div class="service-meta">
+              <span><i class="bi bi-person"></i> Erkek</span>
+              <span class="price">₺280'den</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="service-card reveal">
+          <div class="service-num">03</div>
+          <div class="service-body">
+            <h3>Saç Boyası & Röfle</h3>
+            <p>Profesyonel renk uzmanı, kalıcı ve geçici boyalar, balyaj çalışmaları.</p>
+            <div class="service-meta">
+              <span><i class="bi bi-person-dress"></i> Kadın</span>
+              <span class="price">₺800'den</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="service-card reveal">
+          <div class="service-num">04</div>
+          <div class="service-body">
+            <h3>Saç Bakımı & Maske</h3>
+            <p>Derin nemlendirme, keratin ve botoks bakımları; sağlıklı saçlar için.</p>
+            <div class="service-meta">
+              <span><i class="bi bi-person-dress"></i> Kadın</span>
+              <span class="price">₺550'den</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="service-card reveal">
+          <div class="service-num">05</div>
+          <div class="service-body">
+            <h3>Manikür & Pedikür</h3>
+            <p>Klasik ve kalıcı oje uygulamaları, nail-art ve protez tırnak.</p>
+            <div class="service-meta">
+              <span><i class="bi bi-person-dress"></i> Kadın</span>
+              <span class="price">₺320'den</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="service-card reveal">
+          <div class="service-num">06</div>
+          <div class="service-body">
+            <h3>Cilt Bakımı & Maskeler</h3>
+            <p>Yüze özel cilt analizi ve kişisel bakım programı, derin temizlik.</p>
+            <div class="service-meta">
+              <span><i class="bi bi-person"></i> Erkek</span>
+              <span><i class="bi bi-person-dress"></i> Kadın</span>
+              <span class="price">₺450'den</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+      <p class="services-note reveal">
+        * Fiyatlar saç uzunluğu, hizmet süresi ve seçilen ürünlere göre değişiklik gösterebilir.
+        Net fiyat için ücretsiz danışmanlık alın.
+      </p>
+    </div>
+  </section>
+
+  <!-- ── FELSEFE ───────────────────────────────────── -->
+  <section id="felsefe" class="section section-alt">
+    <div class="container philosophy-grid">
+
+      <div class="philosophy-text reveal">
+        <span class="eyebrow">Felsefemiz</span>
+        <h2>Acelesiz, <em>özenli</em>,<br/>tamamen size <em>özel</em>.</h2>
+        <p>
+          Bizim için stil; bir hizmet değil, bir ritüeldir. Her müşterimize
+          özel zaman ayırır, ne istediğinizi ve neyin size yakışacağını birlikte
+          keşfederiz. Acele yok. Şablon yok. Yalnızca sizi en iyi şekilde
+          yansıtacak bir sonuç.
+        </p>
+
+        <div class="why-list">
+          <div class="why-item">
+            <div class="why-icon"><i class="bi bi-scissors"></i></div>
+            <div>
+              <h4>Uzman Eller</h4>
+              <p>Her stilist, kendi alanında en az 5 yıl deneyimli profesyonel.</p>
+            </div>
+          </div>
+          <div class="why-item">
+            <div class="why-icon"><i class="bi bi-droplet"></i></div>
+            <div>
+              <h4>Premium Ürünler</h4>
+              <p>Sadece tanınmış, kaliteli markalarla çalışırız. Saçınız bunu hak ediyor.</p>
+            </div>
+          </div>
+          <div class="why-item">
+            <div class="why-icon"><i class="bi bi-cup-hot"></i></div>
+            <div>
+              <h4>Misafirperver Atmosfer</h4>
+              <p>Sıcak bir karşılama, taze çekilmiş kahve ve rahat bir koltuk.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="philosophy-image reveal">
+        <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?w=900&q=80&auto=format&fit=crop" alt="Saç bakım ekipmanları" />
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── GALERİ ─────────────────────────────────────── -->
+  <section id="galeri" class="section">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Galeri</span>
+        <h2>Mekânımızdan <em>kareler</em>.</h2>
+        <p>Sıcak ışıklar, klasik berber detayları, modern dokunuşlar.</p>
+      </div>
+
+      <div class="gallery-grid">
+        <div class="g-item g-tall reveal">
+          <img src="https://images.unsplash.com/photo-1585747860715-2ba37e788b70?w=900&q=80&auto=format&fit=crop" alt="Berber salonu iç" />
+        </div>
+        <div class="g-item reveal">
+          <img src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?w=700&q=80&auto=format&fit=crop" alt="Berber ekipmanları" />
+        </div>
+        <div class="g-item reveal">
+          <img src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?w=700&q=80&auto=format&fit=crop" alt="Saç bakım" />
+        </div>
+        <div class="g-item g-wide reveal">
+          <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?w=1400&q=80&auto=format&fit=crop" alt="Kuaför salonu" />
+        </div>
+        <div class="g-item reveal">
+          <img src="https://images.unsplash.com/photo-1604881991720-f91add269bed?w=700&q=80&auto=format&fit=crop" alt="Berber detay" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── İLETİŞİM ───────────────────────────────────── -->
+  <section id="iletisim" class="section section-alt">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">İletişim & Rezervasyon</span>
+        <h2>Sizi <em>bekliyoruz</em>.</h2>
+        <p>Randevu için aşağıdaki formu doldurun veya doğrudan arayın.</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <div class="info-item">
+            <div class="info-icon"><i class="bi bi-geo-alt"></i></div>
+            <div>
+              <h4>Adres</h4>
+              <p>Bağdat Cd. No: 412/A<br/>Suadiye / İstanbul</p>
+            </div>
+          </div>
+          <div class="info-item">
+            <div class="info-icon"><i class="bi bi-telephone"></i></div>
+            <div>
+              <h4>Telefon</h4>
+              <p>+90 (216) 555 17 17</p>
+            </div>
+          </div>
+          <div class="info-item">
+            <div class="info-icon"><i class="bi bi-clock"></i></div>
+            <div>
+              <h4>Çalışma Saatleri</h4>
+              <p>Pazartesi - Cumartesi: 10:00 - 21:00<br/>Pazar: 11:00 - 19:00</p>
+            </div>
+          </div>
+          <div class="info-item">
+            <div class="info-icon"><i class="bi bi-instagram"></i></div>
+            <div>
+              <h4>Instagram</h4>
+              <p>@atolye17.studio</p>
+            </div>
+          </div>
+        </div>
+
+        <form id="rezervasyon" class="contact-form reveal" onsubmit="event.preventDefault(); alert('Bu bir demo formdur. Gerçek bir randevu yapılmadı.');">
+          <h3>Randevu Formu</h3>
+          <div class="field">
+            <label>Ad Soyad</label>
+            <input type="text" placeholder="Adınız Soyadınız" required />
+          </div>
+          <div class="row">
+            <div class="field">
+              <label>Telefon</label>
+              <input type="tel" placeholder="0532 000 00 00" required />
+            </div>
+            <div class="field">
+              <label>Hizmet</label>
+              <select>
+                <option>Saç Kesimi</option>
+                <option>Sakal Tıraşı</option>
+                <option>Saç Boyası / Röfle</option>
+                <option>Saç Bakımı</option>
+                <option>Manikür / Pedikür</option>
+                <option>Cilt Bakımı</option>
+                <option>Diğer</option>
+              </select>
+            </div>
+          </div>
+          <div class="row">
+            <div class="field">
+              <label>Tarih</label>
+              <input type="date" required />
+            </div>
+            <div class="field">
+              <label>Saat</label>
+              <input type="time" required />
+            </div>
+          </div>
+          <div class="field">
+            <label>Not (opsiyonel)</label>
+            <textarea rows="3" placeholder="Belirli bir stilist tercihiniz veya özel istekleriniz..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block btn-lg">
+            Randevu Talebi Gönder
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ─────────────────────────────────── -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="#" class="brand">
+          <span class="brand-mark">A17</span>
+          <span class="brand-text">ATÖLYE <em>17</em></span>
+        </a>
+        <p>Saç değil, stil. Tıraş değil, ritüel. ATÖLYE 17'de size özel bir deneyim.</p>
+      </div>
+      <div class="footer-links">
+        <h5>Bağlantılar</h5>
+        <a href="#hizmetler">Hizmetler</a>
+        <a href="#felsefe">Felsefe</a>
+        <a href="#galeri">Galeri</a>
+        <a href="#iletisim">İletişim</a>
+      </div>
+      <div class="footer-social">
+        <h5>Sosyal Medya</h5>
+        <div class="social-row">
+          <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+          <a href="#" aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
+          <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+          <a href="#" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom container">
+      © <span id="year"></span> ATÖLYE 17 Berber & Kuaför. Tüm hakları saklıdır.
+    </div>
+  </footer>
+
+  <!-- DEMO BADGE -->
+  <a href="https://www.pabiontech.com" target="_blank" rel="noopener" class="demo-badge">
+    <span class="badge-dot"></span>
+    <span class="badge-text">Demo · <strong>PabionTech</strong> tasarımı</span>
+    <i class="bi bi-arrow-up-right"></i>
+  </a>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
