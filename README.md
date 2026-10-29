@@ -10,6 +10,7 @@ Sektörel örnek (demo) web siteleri. Her klasör bağımsız bir tek sayfa site
 | Restoran | `restoran/` | https://restoran.demo.pabiontech.com |
 | Spor Salonu | `spor-salonu/` | https://spor-salonu.demo.pabiontech.com |
 | Berber & Kuaför | `hairdesigner/` | https://hairdesigner.demo.pabiontech.com |
+| Emlak | `emlak/` | https://emlak.demo.pabiontech.com |
 
 ## Yapı
 

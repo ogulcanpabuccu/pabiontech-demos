@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex" /><!-- demo: Google sonuçlarında gerçek işletme gibi görünmesin -->
+  <title>Eşik Gayrimenkul — Ankara'da Satılık ve Kiralık Konut</title>
+  <meta name="description" content="Eşik Gayrimenkul — Çankaya, Gölbaşı, Yenimahalle ve Etimesgut'ta satılık ve kiralık konutlar, ücretsiz değerleme ve kredi danışmanlığı." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ── NAVBAR ────────────────────────────────────── -->
+  <header class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#" class="brand" aria-label="Eşik Gayrimenkul ana sayfa">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 32 32" width="32" height="32"><path d="M6 28V13L16 5l10 8v15" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/><path d="M3 28h26" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/><path d="M13 28v-8h6v8" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/></svg>
+        </span>
+        <span class="brand-text">Eşik <em>Gayrimenkul</em></span>
+      </a>
+
+      <nav class="nav-links">
+        <a href="#ilanlar">İlanlar</a>
+        <a href="#bolgeler">Bölgeler</a>
+        <a href="#hizmetler">Hizmetler</a>
+        <a href="#kredi">Kredi Hesapla</a>
+        <a href="#ekip">Ekip</a>
+      </nav>
+
+      <a href="#iletisim" class="btn btn-primary nav-cta">
+        <i class="bi bi-telephone"></i> Bize Ulaşın
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Menü">
+        <i class="bi bi-list"></i>
+      </button>
+    </div>
+
+    <div class="nav-mobile" id="navMobile">
+      <a href="#ilanlar">İlanlar</a>
+      <a href="#bolgeler">Bölgeler</a>
+      <a href="#hizmetler">Hizmetler</a>
+      <a href="#kredi">Kredi Hesapla</a>
+      <a href="#ekip">Ekip</a>
+      <a href="#iletisim">İletişim</a>
+    </div>
+  </header>
+
+  <!-- ── HERO ──────────────────────────────────────── -->
+  <section class="hero">
+    <img class="hero-img" src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=2000&q=80&auto=format&fit=crop" alt="Akşam ışığında modern bahçeli bir ev" />
+    <div class="hero-shade"></div>
+
+    <div class="container hero-content">
+      <p class="hero-kicker">Ankara · 2008'den beri</p>
+      <h1>Kapıdan girdiğiniz an <em>evim</em> diyeceğiniz yer.</h1>
+      <p class="hero-sub">Çankaya'dan Gölbaşı'na, her ilanı yerinde gördüğümüz konutlar. Doğru fiyat, şeffaf süreç, tapuya kadar yanınızda bir danışman.</p>
+    </div>
+
+    <div class="container">
+      <form class="search-panel" id="searchPanel">
+        <div class="search-tabs" role="tablist" aria-label="İlan türü">
+          <button type="button" class="search-tab active" data-deal="hepsi" role="tab" aria-selected="true">Tümü</button>
+          <button type="button" class="search-tab" data-deal="satilik" role="tab" aria-selected="false">Satılık</button>
+          <button type="button" class="search-tab" data-deal="kiralik" role="tab" aria-selected="false">Kiralık</button>
+        </div>
+        <div class="search-fields">
+          <label class="sf">
+            <span>İlçe</span>
+            <select name="ilce">
+              <option value="hepsi">Tüm ilçeler</option>
+              <option>Çankaya</option>
+              <option>Gölbaşı</option>
+              <option>Yenimahalle</option>
+              <option>Etimesgut</option>
+            </select>
+          </label>
+          <label class="sf">
+            <span>Konut tipi</span>
+            <select name="tip">
+              <option value="hepsi">Hepsi</option>
+              <option>Daire</option>
+              <option>Villa</option>
+              <option>Müstakil</option>
+            </select>
+          </label>
+          <label class="sf">
+            <span>Oda sayısı</span>
+            <select name="oda">
+              <option value="hepsi">Fark etmez</option>
+              <option value="1">1+1</option>
+              <option value="2">2+1</option>
+              <option value="3">3+1</option>
+              <option value="4">4+1 ve üzeri</option>
+            </select>
+          </label>
+          <button type="submit" class="btn btn-primary search-btn">
+            <i class="bi bi-search"></i> İlan Ara
+          </button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- ── GÜVEN ŞERİDİ ──────────────────────────────── -->
+  <section class="trust">
+    <div class="container trust-grid">
+      <div class="trust-item"><strong>18</strong><span>yıllık bölge tecrübesi</span></div>
+      <div class="trust-item"><strong>1.200+</strong><span>tamamlanan satış ve kiralama</span></div>
+      <div class="trust-item"><strong>6</strong><span>bölge uzmanı danışman</span></div>
+      <div class="trust-item"><strong>48 saat</strong><span>içinde ücretsiz değerleme</span></div>
+    </div>
+  </section>
+
+  <!-- ── İLANLAR ───────────────────────────────────── -->
+  <section id="ilanlar" class="section">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <p class="kicker">Portföy</p>
+          <h2>Güncel ilanlar</h2>
+        </div>
+        <p class="section-lead">Her ilan ofisimizden bir danışman tarafından yerinde incelendi ve fotoğraflandı. Detay için ilana tıklayın.</p>
+      </div>
+
+      <div class="filter-bar">
+        <div class="chips" id="dealChips">
+          <button class="chip active" data-deal="hepsi">Tümü</button>
+          <button class="chip" data-deal="satilik">Satılık</button>
+          <button class="chip" data-deal="kiralik">Kiralık</button>
+        </div>
+        <div class="filter-right">
+          <span class="result-count" id="resultCount" aria-live="polite"></span>
+          <label class="sort">
+            <span class="visually-hidden">Sırala</span>
+            <select id="sortSelect">
+              <option value="onerilen">Önerilen</option>
+              <option value="artan">Fiyat: düşükten yükseğe</option>
+              <option value="azalan">Fiyat: yüksekten düşüğe</option>
+              <option value="m2">En geniş</option>
+            </select>
+          </label>
+        </div>
+      </div>
+
+      <div class="active-filters" id="activeFilters"></div>
+
+      <div class="listings" id="listings"></div>
+
+      <div class="empty" id="emptyState" hidden>
+        <i class="bi bi-house-slash"></i>
+        <h3>Bu kriterlere uyan ilan şu an yok</h3>
+        <p>Aradığınızı bize söyleyin; portföye giren ilk uygun ilanı size haber verelim.</p>
+        <button class="btn btn-ghost" id="resetFilters">Filtreleri temizle</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── BÖLGELER ──────────────────────────────────── -->
+  <section id="bolgeler" class="section section-paper">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <p class="kicker">Bölgeler</p>
+          <h2>Ankara'yı sokak sokak biliyoruz</h2>
+        </div>
+        <p class="section-lead">Okul, ulaşım, kira getirisi, imar durumu: çalıştığımız her ilçenin yerel bilgisini danışmanlarımız size ilk görüşmede anlatır.</p>
+      </div>
+
+      <div class="regions">
+        <button class="region region-lg reveal" data-ilce="Çankaya">
+          <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=1200&q=80&auto=format&fit=crop" alt="Modern apartman cephesi" loading="lazy" />
+          <span class="region-info">
+            <span class="region-name">Çankaya</span>
+            <span class="region-desc">Çayyolu, Kavaklıdere, Bahçelievler</span>
+            <span class="region-count" data-count="Çankaya"></span>
+          </span>
+        </button>
+        <button class="region reveal" data-ilce="Gölbaşı">
+          <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=900&q=80&auto=format&fit=crop" alt="Havuzlu müstakil villa" loading="lazy" />
+          <span class="region-info">
+            <span class="region-name">Gölbaşı</span>
+            <span class="region-desc">İncek, Kızılcaşar, Mogan</span>
+            <span class="region-count" data-count="Gölbaşı"></span>
+          </span>
+        </button>
+        <button class="region reveal" data-ilce="Yenimahalle">
+          <img src="https://images.unsplash.com/photo-1574362848149-11496d93a7c7?w=900&q=80&auto=format&fit=crop" alt="Balkonlu konut blokları" loading="lazy" />
+          <span class="region-info">
+            <span class="region-name">Yenimahalle</span>
+            <span class="region-desc">Batıkent, Demetevler</span>
+            <span class="region-count" data-count="Yenimahalle"></span>
+          </span>
+        </button>
+        <button class="region reveal" data-ilce="Etimesgut">
+          <img src="https://images.unsplash.com/photo-1605276374104-dee2a0ed3cd6?w=900&q=80&auto=format&fit=crop" alt="Garajlı müstakil ev" loading="lazy" />
+          <span class="region-info">
+            <span class="region-name">Etimesgut</span>
+            <span class="region-desc">Eryaman, Bağlıca, Elvankent</span>
+            <span class="region-count" data-count="Etimesgut"></span>
+          </span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── HİZMETLER + SÜREÇ ─────────────────────────── -->
+  <section id="hizmetler" class="section">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <p class="kicker">Hizmetler</p>
+          <h2>Alırken de satarken de aynı özen</h2>
+        </div>
+      </div>
+
+      <div class="services">
+        <article class="service reveal">
+          <i class="bi bi-house-check"></i>
+          <h3>Satış danışmanlığı</h3>
+          <p>Mülkünüzü doğru fiyatla, profesyonel fotoğraf ve ilan metniyle yayınlar; ciddi alıcıları sizin yerinize eleriz.</p>
+        </article>
+        <article class="service reveal">
+          <i class="bi bi-key"></i>
+          <h3>Kiralama yönetimi</h3>
+          <p>Kiracı bulma, sözleşme, depozito ve teslim tutanağı. İsterseniz kira tahsilatını da biz takip ederiz.</p>
+        </article>
+        <article class="service reveal">
+          <i class="bi bi-clipboard2-data"></i>
+          <h3>Ücretsiz değerleme</h3>
+          <p>Bölgedeki son satışlara ve emsal ilanlara dayanan, yazılı bir değer raporu. 48 saat içinde elinizde.</p>
+        </article>
+        <article class="service reveal">
+          <i class="bi bi-bank"></i>
+          <h3>Kredi ve tapu süreci</h3>
+          <p>Konut kredisi başvurusu, ekspertiz randevusu ve tapu devri. Evrak listesini sizin için biz hazırlarız.</p>
+        </article>
+      </div>
+
+      <ol class="steps">
+        <li class="reveal"><span class="step-no">01</span><h4>Tanışma</h4><p>Ne aradığınızı, bütçenizi ve önceliklerinizi dinleriz.</p></li>
+        <li class="reveal"><span class="step-no">02</span><h4>Seçki</h4><p>Portföyden ve bölgeden size uyan ilanları ayıklarız.</p></li>
+        <li class="reveal"><span class="step-no">03</span><h4>Gezme</h4><p>Gezileri tek güne toplar, her evin artısını eksisini söyleriz.</p></li>
+        <li class="reveal"><span class="step-no">04</span><h4>Tapu</h4><p>Pazarlık, sözleşme ve tapu günü yanınızda oluruz.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ── KREDİ HESAPLAYICI ─────────────────────────── -->
+  <section id="kredi" class="section section-green">
+    <div class="container calc-grid">
+      <div class="calc-intro">
+        <p class="kicker kicker-light">Kredi hesaplayıcı</p>
+        <h2>Aylık taksitinizi önceden bilin</h2>
+        <p>Konut fiyatını, peşinatı ve vadeyi değiştirin; tahmini aylık taksit anında güncellensin. Bankaların güncel oranlarını danışmanınız size ayrıca iletir.</p>
+        <p class="calc-note"><i class="bi bi-info-circle"></i> Örnek hesaplamadır. Faiz oranı, BSMV/KKDF ve masraflar bankaya göre değişir.</p>
+      </div>
+
+      <form class="calc" id="calc" onsubmit="return false">
+        <div class="calc-row">
+          <label for="cPrice">Konut fiyatı</label>
+          <output id="oPrice"></output>
+        </div>
+        <input type="range" id="cPrice" min="2000000" max="30000000" step="250000" value="8000000" />
+
+        <div class="calc-row">
+          <label for="cDown">Peşinat</label>
+          <output id="oDown"></output>
+        </div>
+        <input type="range" id="cDown" min="20" max="80" step="5" value="30" />
+
+        <div class="calc-row">
+          <label for="cTerm">Vade</label>
+          <output id="oTerm"></output>
+        </div>
+        <input type="range" id="cTerm" min="12" max="120" step="12" value="120" />
+
+        <div class="calc-row">
+          <label for="cRate">Aylık faiz oranı</label>
+          <span class="rate-input"><span>%</span><input type="number" id="cRate" min="0.5" max="6" step="0.01" value="2.79" inputmode="decimal" /></span>
+        </div>
+
+        <div class="calc-result">
+          <div>
+            <span>Aylık taksit</span>
+            <strong id="rMonthly"></strong>
+          </div>
+          <div class="calc-sub">
+            <span>Kredi tutarı <b id="rLoan"></b></span>
+            <span>Toplam geri ödeme <b id="rTotal"></b></span>
+          </div>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- ── DEĞERLEME ─────────────────────────────────── -->
+  <section id="degerleme" class="section">
+    <div class="container valuation">
+      <div class="valuation-media reveal">
+        <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=1100&q=80&auto=format&fit=crop" alt="Masada duran maket ev ve anahtar" loading="lazy" />
+      </div>
+      <div class="valuation-body reveal">
+        <p class="kicker">Satmayı ya da kiraya vermeyi mi düşünüyorsunuz?</p>
+        <h2>Evinizin bugünkü değerini öğrenin</h2>
+        <p>Birkaç bilgiyi bırakın; bölge danışmanınız emsallere dayalı bir değer aralığıyla sizi arasın. Ücretsiz ve bağlayıcı değil.</p>
+
+        <form class="val-form" id="valForm" novalidate>
+          <div class="row">
+            <label class="field">
+              <span>İlçe</span>
+              <select required>
+                <option value="">Seçin</option>
+                <option>Çankaya</option>
+                <option>Gölbaşı</option>
+                <option>Yenimahalle</option>
+                <option>Etimesgut</option>
+                <option>Diğer</option>
+              </select>
+            </label>
+            <label class="field">
+              <span>Oda sayısı</span>
+              <select required>
+                <option value="">Seçin</option>
+                <option>1+1</option>
+                <option>2+1</option>
+                <option>3+1</option>
+                <option>4+1 ve üzeri</option>
+              </select>
+            </label>
+          </div>
+          <div class="row">
+            <label class="field">
+              <span>Brüt m²</span>
+              <input type="number" min="20" placeholder="örn. 140" required />
+            </label>
+            <label class="field">
+              <span>Telefon</span>
+              <input type="tel" placeholder="05xx xxx xx xx" required />
+            </label>
+          </div>
+          <button type="submit" class="btn btn-clay">Değerleme İste <i class="bi bi-arrow-right"></i></button>
+          <p class="form-ok" hidden><i class="bi bi-check-circle"></i> Talebiniz alındı. Bu bir demo formdur; gerçek bir başvuru oluşturulmadı.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── EKİP ──────────────────────────────────────── -->
+  <section id="ekip" class="section section-paper">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <p class="kicker">Ekip</p>
+          <h2>Danışmanlarınız</h2>
+        </div>
+        <p class="section-lead">Her danışmanımızın kendi bölgesi ve portföyü var. Size, aradığınız ilçeyi en iyi bilen kişi döner.</p>
+      </div>
+
+      <div class="team" id="team"></div>
+    </div>
+  </section>
+
+  <!-- ── İLETİŞİM ──────────────────────────────────── -->
+  <section id="iletisim" class="section">
+    <div class="container contact">
+      <div class="contact-info reveal">
+        <p class="kicker">İletişim</p>
+        <h2>Ofise kahveye bekleriz</h2>
+        <ul class="info-list">
+          <li><i class="bi bi-geo-alt"></i><div><h4>Adres</h4><p>Tunalı Hilmi Cad. No: 00/4<br />Kavaklıdere, Çankaya / Ankara</p></div></li>
+          <li><i class="bi bi-telephone"></i><div><h4>Telefon</h4><p>0312 000 00 00</p></div></li>
+          <li><i class="bi bi-whatsapp"></i><div><h4>WhatsApp</h4><p>0532 000 00 00</p></div></li>
+          <li><i class="bi bi-clock"></i><div><h4>Çalışma saatleri</h4><p>Pzt–Cmt 09:30–19:00 · Pazar randevuyla</p></div></li>
+        </ul>
+      </div>
+
+      <form class="contact-form reveal" id="contactForm" novalidate>
+        <h3>Mesaj bırakın</h3>
+        <div class="row">
+          <label class="field">
+            <span>Ad Soyad</span>
+            <input type="text" placeholder="Adınız Soyadınız" required />
+          </label>
+          <label class="field">
+            <span>Telefon</span>
+            <input type="tel" placeholder="0532 000 00 00" required />
+          </label>
+        </div>
+        <div class="row">
+          <label class="field">
+            <span>Danışman <small>(isteğe bağlı)</small></span>
+            <select id="contactAgent">
+              <option value="">Fark etmez, uygun olan dönsün</option>
+            </select>
+          </label>
+          <label class="field">
+            <span>İlan no <small>(isteğe bağlı)</small></span>
+            <input type="text" id="contactListing" placeholder="örn. ES-1042" />
+          </label>
+        </div>
+        <label class="field">
+          <span>Mesajınız</span>
+          <textarea rows="4" id="contactMsg" placeholder="Ne aradığınızı kısaca yazın" required></textarea>
+        </label>
+        <button type="submit" class="btn btn-primary">Gönder <i class="bi bi-send"></i></button>
+        <p class="form-ok" hidden><i class="bi bi-check-circle"></i> Mesajınız alındı. Bu bir demo formdur; gerçek bir mesaj gönderilmedi.</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ────────────────────────────────────── -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="brand-text">Eşik <em>Gayrimenkul</em></span>
+        <p>Ankara'da satılık ve kiralık konut, değerleme ve kredi danışmanlığı.</p>
+      </div>
+      <div class="footer-links">
+        <a href="#ilanlar">İlanlar</a>
+        <a href="#bolgeler">Bölgeler</a>
+        <a href="#kredi">Kredi Hesapla</a>
+        <a href="#degerleme">Değerleme</a>
+      </div>
+      <div class="socials">
+        <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+        <a href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+        <a href="#" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+      </div>
+    </div>
+    <div class="footer-bottom container">
+      © <span id="year"></span> Eşik Gayrimenkul. Tüm hakları saklıdır. · Yetki belgesi no: 0000000
+    </div>
+  </footer>
+
+  <!-- ── İLAN DETAY ────────────────────────────────── -->
+  <dialog class="modal" id="listingModal" aria-labelledby="mTitle">
+    <button class="modal-close" id="modalClose" aria-label="Kapat"><i class="bi bi-x-lg"></i></button>
+    <div class="modal-grid">
+      <div class="modal-gallery">
+        <img id="mImg" src="" alt="" />
+        <div class="thumbs" id="mThumbs"></div>
+      </div>
+      <div class="modal-body">
+        <div class="modal-meta"><span class="badge" id="mBadge"></span><span class="ref" id="mRef"></span></div>
+        <h3 id="mTitle"></h3>
+        <p class="loc" id="mLoc"></p>
+        <p class="modal-price" id="mPrice"></p>
+        <dl class="facts" id="mFacts"></dl>
+        <p class="modal-desc" id="mDesc"></p>
+        <ul class="features" id="mFeatures"></ul>
+        <div class="agent-box" id="mAgent"></div>
+        <div class="modal-actions">
+          <button class="btn btn-primary" id="mAsk"><i class="bi bi-calendar-check"></i> Gezme randevusu iste</button>
+          <a class="btn btn-ghost" id="mWa" href="#" onclick="return false"><i class="bi bi-whatsapp"></i> WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- DEMO BADGE -->
+  <a href="https://www.pabiontech.com" target="_blank" rel="noopener" class="demo-badge">
+    <span class="badge-dot"></span>
+    <span class="badge-text">Demo · <strong>PabionTech</strong> tasarımı</span>
+    <i class="bi bi-arrow-up-right"></i>
+  </a>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
